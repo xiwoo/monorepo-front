@@ -1,0 +1,11 @@
+
+export default class {{ pascalCase name }}Error implements Error {
+
+  name: string;
+  message: string;
+
+	constructor(name: string, message: string) {
+    this.name = `[ {{ pascalCase name }}Error ]: filter exception > ${name}`;
+    this.message = message;
+	}
+}
